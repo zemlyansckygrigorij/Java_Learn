@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="editAnchor" prefHeight="97.0" prefWidth="185.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditController">
+   <children>
+      <TextField fx:id="eFio" layoutY="12.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="ePhone" layoutY="66.0" prefHeight="25.0" prefWidth="116.0" />
+      <Button fx:id="OkButton" layoutX="122.0" layoutY="12.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="58.0" text="Ввод" />
+      <Button fx:id="CancelButton" layoutX="122.0" layoutY="38.0" mnemonicParsing="false" onAction="#action" text="Отмена" />
+      <TextField fx:id="town" layoutY="38.0" prefHeight="25.0" prefWidth="116.0" />
+   </children>
+</AnchorPane>

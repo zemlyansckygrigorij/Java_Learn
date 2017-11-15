@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Anchor" prefHeight="224.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <Button fx:id="btnAdd" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#action" text="добавить" />
+      <Button fx:id="btnEdit" layoutX="61.0" layoutY="2.0" mnemonicParsing="false" onAction="#action" text="Редактировать" />
+      <Button fx:id="btnDelete" layoutX="171.0" layoutY="2.0" mnemonicParsing="false" onAction="#action" text="Удалить" />
+      <TextField layoutX="14.0" layoutY="34.0" />
+      <Button fx:id="btnSearch" layoutX="171.0" layoutY="34.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="60.0" text="Поиск" />
+      <TableView fx:id="tableAddressBook" layoutX="14.0" layoutY="66.0" prefHeight="126.0" prefWidth="215.0">
+        <columns>
+          <TableColumn fx:id="columnFIO" prefWidth="75.0" text="ФИО" />
+          <TableColumn fx:id="columnTown" prefWidth="75.0" text="Город" />
+          <TableColumn fx:id="columnPhone" prefWidth="75.0" text="Телефон" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="192.0" />
+      <ComboBox fx:id="CBox" layoutX="14.0" layoutY="198.0" onAction="#changeCombo" prefHeight="25.0" prefWidth="67.0" promptText="EN" />
+   </children>
+</AnchorPane>
